@@ -1,0 +1,59 @@
+
+Today's problem statement is to find frequency of digits in a number.
+Shared all 5 solutions
+
+#Method 1
+number = input('Enter the Number :')
+digit = input('Enter the digit :')
+
+Freq= number.count(digit)
+print('Digit count is :',Freq)
+
+#Method 2
+number = input('Enter the Number :')
+digit = input('Enter the digit :')
+
+Freq=0
+
+for i in number:
+    if i==digit:
+       Freq = Freq+1
+    
+print(Freq)
+
+#Method 3
+number = input('Enter the Number :')
+digit = input('Enter the digit :')
+
+my_list = list(number)
+Freq=0
+
+for i in my_list:
+    if i == digit:
+       Freq = Freq+1
+    
+print(Freq)
+
+#Method 4
+number = input('Enter the Number :')
+digit = input('Enter the digit :')
+
+my_list = list(number)
+Freq=my_list.count(digit)
+    
+print(Freq)
+
+#Method 5
+number = input('Enter the Number :')
+digit = input('Enter the digit :')
+
+Freq=0
+i=0
+
+while i < len(number):    
+    if digit == number[i]:
+         Freq = Freq +1        
+    i = i+1
+        
+print(Freq)
+
